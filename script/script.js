@@ -91,6 +91,7 @@ startBtn.addEventListener("click", () => {
 
   logInBox.classList.add("hide-box");
 
+  if (gameLevelInput.value == 12) gameBox.style.width = "672px";
   setTimeout(() => {
     gameBox.classList.remove("hide-box");
   }, 300);

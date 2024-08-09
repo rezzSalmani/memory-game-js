@@ -4,53 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>Memory Game</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/grid.css">
+    <!-- <link rel="stylesheet" href="style/grid.css"> -->
     <link rel="stylesheet" href="style/style.css">
 
 </head>
 
 <body>
-    <span class="ggg"></span>
-    <section class="main-section">
 
-        <div class="starter-box">
-            <label for="username">Enter Your Name</label>
-            <input type="text" name="username" id="username-input">
-            <label for="gameLevel">Select Game Difficulty</label>
-            <select name="gameLevel" id="gameLevel">
-                <option value="-1">choose a level</option>
-                <option value="4">Easy</option>
-                <option value="8">Normal</option>
-                <option value="12">Hard</option>
-            </select>
-            <button disabled class="start-btn button-disable">Start Now</button>
-        </div>
-        <div class="game-box hide-box">
-            <div class="game-heading">
-                <div class="">
-                    <span class="username-label">username: </span>
-                    <span class="username">unknown</span>
-                </div>
-                <div class="">
-                    <span class="timer-label">Time:</span>
-                    <span class="timer">00:00 sec</span>
-                </div>
-                <div class="">
-                    <span class="counter-label">Counter:</span>
-                    <span class="counter">0 moves</span>
-                </div>
+    <div class="starter-box">
+        <label for="username">Enter Your Name</label>
+        <input type="text" name="username" id="username-input">
+        <label for="gameLevel">Select Game Difficulty</label>
+        <select name="gameLevel" id="gameLevel">
+            <option value="-1">choose a level</option>
+            <option value="4">Easy</option>
+            <option value="8">Normal</option>
+            <option value="12">Hard</option>
+        </select>
+        <button disabled class="start-btn button-disable">Start Now</button>
+    </div>
+    <div class="game-box hide-box">
+        <div class="game-heading">
+            <div class="">
+                <span class="username-label">username: </span>
+                <span class="username">unknown</span>
             </div>
-            <div class="game-container" data-level="4">
-                <!-- <div class="item-box">
+            <div class="">
+                <span class="timer-label">Time:</span>
+                <span class="timer">00:00 sec</span>
+            </div>
+            <div class="">
+                <span class="counter-label">Counter:</span>
+                <span class="counter">0 moves</span>
+            </div>
+        </div>
+        <div class="game-container" data-level="4">
+            <!-- <div class="item-box">
                     <span class="item item-back">🐂</span>
                     <span class="item item-front">?</span>
                 </div> -->
-                <!-- <div class="row">
+            <!-- <div class="row">
                     <div class="col-3">
                         <div class="item-box">
                             <span class="item item-back">🐂</span>
@@ -76,9 +73,8 @@
                         </div>
                     </div>
                 </div> -->
-            </div>
         </div>
-    </section>
+    </div>
     <dialog class="end-game-modal">
         <span>🎊 Congratulation 🎊</span>
         <span>You Won The Game in <span class="endTime"></span>🥇</span>
